@@ -18,6 +18,7 @@ public class Calculos {
         double calcio; 
         double magnesio;
         double enxofre;
+        double teste;
 
 
       double CalcIdealFosforo (double solo ){
