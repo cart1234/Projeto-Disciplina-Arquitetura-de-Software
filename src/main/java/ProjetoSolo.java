@@ -16,6 +16,8 @@ public class ProjetoSolo {
      */
     public static void main(String[] args) {
        
+        CalculoseTeor cal1 = new CalculoseTeor();
+        CorrecaoMagnesio cal2 = new CorrecaoMagnesio();
         
         
         
