@@ -18,13 +18,19 @@ public class CalculoseTeor {
         double calcio; 
         double magnesio;
         double enxofre;
+        double aluminio; 
+        double HaL;
 
-    public CalculoseTeor(double potassio, double fosforo, double calcio, double magnesio, double enxofre) {
+  
+
+    public CalculoseTeor(double potassio, double fosforo, double calcio, double magnesio, double enxofre, double aluminio, double HaL) {
         this.potassio = potassio;
         this.fosforo = fosforo;
         this.calcio = calcio;
         this.magnesio = magnesio;
         this.enxofre = enxofre;
+        this.aluminio = aluminio;
+        this.HaL = HaL;
     }
         
         
