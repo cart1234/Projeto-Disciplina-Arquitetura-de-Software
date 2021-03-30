@@ -18,16 +18,22 @@ public class JavaApplication41 {
      */
     public static void main(String[] args) {
         
-         CorrecaoeRecuperacao c = new CorrecaoeRecuperacao(); 
+         CorrecaoeRecuperacao c = new CorrecaoeRecuperacao(12, 8.59,70, 1); 
          
-         double d = c.QuantidadeAplicada(11, 8.59, 70); 
+         
+         double d = c.QuantidadeAplicada(); 
+        double d1 =c.retorno(1);
+        
+        
+        
+        
         
        DecimalFormat df = new DecimalFormat("#,###.00");
        
   
          System.out.println( df.format(d) +" kg/hectare de SuperFostato Simples" );
         
-      
-    }
+        System.out.println(df.format(d1));
     
-}
+    
+}}
