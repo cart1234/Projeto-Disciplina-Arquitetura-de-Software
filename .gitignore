@@ -1,7 +1,6 @@
-/nbproject
-build.xml
-build/
-manifest.mf/
-target 
-.idea 
-build/ 
+/nbproject/
+/build/ 
+/target/
+*.class
+*.jar
+*.war
