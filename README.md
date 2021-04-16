@@ -23,6 +23,6 @@ Referencia: https://github.com/gabrielcostasilva/sa-soilcorrection
   CLASSE InterfacePotassio 
     -> Contém os métodos que serao aplicados na Classe PotassagemEnum. 
     
-    
-   CLASSE PotassagemEnum  
+
+  CLASSE PotassagemEnum  
   -> Reponsável pelos cálculos do Custo, Quantidade aplicada, e os valores obtidos do fornecimento da Correcao do tipo de Potassio. 
