@@ -33,7 +33,7 @@ cloc|github.com/AlDanial/cloc v 1.82  T=0.01 s (497.3 files/s, 52355.1 lines/s)
 
 Language|files|blank|comment|code
 :-------|-------:|-------:|-------:|-------:
-Java|7|358|0|379
+Java|7|358|0|398
 --------|--------|--------|--------|--------
 
 
