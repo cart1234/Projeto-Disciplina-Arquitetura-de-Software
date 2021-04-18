@@ -31,7 +31,7 @@ Referencia: https://github.com/gabrielcostasilva/sa-soilcorrection
       10 unique files.                              
        0 files ignored.
 
-v 1.82  T=0.03 s (328.9 files/s, 44769.7 lines/s)
+
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
