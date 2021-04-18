@@ -26,3 +26,16 @@ Referencia: https://github.com/gabrielcostasilva/sa-soilcorrection
 
   CLASSE PotassagemEnum  
   -> Reponsável pelos cálculos do Custo, Quantidade aplicada, e os valores obtidos do fornecimento da Correcao do tipo de Potassio. 
+  
+      10 text files.
+      10 unique files.                              
+       0 files ignored.
+
+github.com/AlDanial/cloc v 1.82  T=0.03 s (328.9 files/s, 44769.7 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Java                            10            712              4            645
+-------------------------------------------------------------------------------
+
+
