@@ -38,6 +38,9 @@ Language|files|blank|comment|code
 :-------|-------:|-------:|-------:|-------:
 Java|7|358|0|398
 
+Problemas identificados 
+->  Excesso de estrutura de repetição
+->  Nome de metodos incoerente
 
 
 -> Após as correcões do projeto 
@@ -48,6 +51,10 @@ cloc|github.com/AlDanial/cloc v 1.82  T=0.01 s (506.5 files/s, 54631.2 lines/s)
 Language|files|blank|comment|code
 :-------|-------:|-------:|-------:|-------:
 Java|7|390|0|365
+
+-> Redução de estruturas condicionais 
+-> Nome de metodos coerente 
+-> utilizei conceito do polimorfismo
 
 Utilizei como referencia o site https://www.alura.com.br/artigos/reduzindo-de-n-ifs-para-nenhum-com-strategy-em-java 
 
