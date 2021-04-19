@@ -23,6 +23,46 @@ Referencia: https://github.com/gabrielcostasilva/sa-soilcorrection
   CLASSE InterfacePotassio 
     -> Contém os métodos que serao aplicados na Classe PotassagemEnum. 
     
-    
-   CLASSE PotassagemEnum  
+
+  CLASSE PotassagemEnum  
   -> Reponsável pelos cálculos do Custo, Quantidade aplicada, e os valores obtidos do fornecimento da Correcao do tipo de Potassio. 
+  
+  
+    =========================  Medição do Projeto ==========================================
+  
+
+cloc|github.com/AlDanial/cloc v 1.82  T=0.01 s (497.3 files/s, 52355.1 lines/s)
+--- | ---
+
+Language|files|blank|comment|code
+:-------|-------:|-------:|-------:|-------:
+Java|7|358|0|398
+
+.Problemas identificados 
+
+->  Excesso de estrutura de repetição
+
+->  Nome de metodos incoerente
+
+
+   
+    ==================== APÓS CORREÇÃO DO PROJETO ============================
+   
+
+cloc|github.com/AlDanial/cloc v 1.82  T=0.01 s (506.5 files/s, 54631.2 lines/s)
+--- | ---
+
+Language|files|blank|comment|code
+:-------|-------:|-------:|-------:|-------:
+Java|7|390|0|365
+
+-> Redução de estruturas condicionais 
+
+-> Nome de metodos coerente 
+
+-> utilizei conceito do polimorfismo
+
+Utilizei como referencia o site https://www.alura.com.br/artigos/reduzindo-de-n-ifs-para-nenhum-com-strategy-em-java 
+
+
+
