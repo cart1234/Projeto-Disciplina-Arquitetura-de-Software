@@ -53,7 +53,9 @@ Language|files|blank|comment|code
 Java|7|390|0|365
 
 -> Redução de estruturas condicionais 
+
 -> Nome de metodos coerente 
+
 -> utilizei conceito do polimorfismo
 
 Utilizei como referencia o site https://www.alura.com.br/artigos/reduzindo-de-n-ifs-para-nenhum-com-strategy-em-java 
