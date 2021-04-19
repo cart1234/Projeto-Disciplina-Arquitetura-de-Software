@@ -2,13 +2,15 @@
 public enum PotassagemEnum  implements InterfacePotassio{
 
 	
-	CALCULOPOTASSIO{
-
+	
+	CALCULOPOTASSIO{ 
+	
+    
 		@Override
 		public double PotassioAtualCTC(double potassio, double calcio, double magnesio, double HAl) {
-			
+		  
 	          double n1 = calcio + potassio+magnesio + HAl;
-
+              
 	          return potassio / n1 * 100;
 
 		}
@@ -47,11 +49,11 @@ public enum PotassagemEnum  implements InterfacePotassio{
 		
 		
 	@Override
-      public double KgK20(double potassioCTCDesejado, double potassio,  double porcentagem, 
+      public double KgK20(double potassioCTCDesejado, double potassio, 
     		  double calcio, double magnesio, double HAl) {
 			  
 			  
-	   return this.CmolKg(potassioCTCDesejado, potassio, calcio, magnesio, HAl)  * 100/ porcentagem ;
+	   return this.CmolKg(potassioCTCDesejado, potassio, calcio, magnesio, HAl)  * 100/ 85 ;
 			  
   }
 		
@@ -68,10 +70,10 @@ public enum PotassagemEnum  implements InterfacePotassio{
 		
 		  @Override
 		  public double QuantidadeAplicada(double potassioCTCDesejado, double potassio,
-				   double calcio, double magnesio, double HAl, double porcentagem) {
+				   double calcio, double magnesio, double HAl) {
 			   
 			   
-		  return this.CALCULOPOTASSIO.KgK20(potassioCTCDesejado, potassio, porcentagem,
+		  return this.CALCULOPOTASSIO.KgK20(potassioCTCDesejado, potassio,
 				  calcio, magnesio,HAl)  * 100 / 58.0;
 			   
 			   
@@ -80,10 +82,10 @@ public enum PotassagemEnum  implements InterfacePotassio{
 		  
 		 @Override
 		public double CustoKgha(double cloreto, double potassioCTCDesejado, double potassio,
-				double calcio, double magnesio, double HAl, double porcentagem)  {
+				double calcio, double magnesio, double HAl)  {
 			
 			return cloreto * ((this.QuantidadeAplicada(potassioCTCDesejado, potassio, 
-					calcio, magnesio, HAl, porcentagem ) * 2.42 ) /1000)/2.42;
+					calcio, magnesio, HAl) * 2.42 ) /1000)/2.42;
 			
 			
 			
@@ -99,10 +101,10 @@ public enum PotassagemEnum  implements InterfacePotassio{
 		
 		  @Override
 		  public double QuantidadeAplicada(double potassioCTCDesejado, double potassio,
-				   double calcio, double magnesio, double HAl, double porcentagem) {
+				   double calcio, double magnesio, double HAl) {
 			   
 			   
-		  return this.CALCULOPOTASSIO.KgK20(potassioCTCDesejado, potassio, porcentagem,
+		  return this.CALCULOPOTASSIO.KgK20(potassioCTCDesejado, potassio,
 				  calcio, magnesio,HAl)  * 100 / 52.0;
 			   
 			   
@@ -114,10 +116,10 @@ public enum PotassagemEnum  implements InterfacePotassio{
 		  
 		 @Override
 		public double CustoKgha(double sulfato, double potassioCTCDesejado, double potassio,
-				double calcio, double magnesio, double HAl, double porcentagem)  {
+				double calcio, double magnesio, double HAl)  {
 			
 			return sulfato * ((this.QuantidadeAplicada(potassioCTCDesejado, potassio, 
-					calcio, magnesio, HAl, porcentagem ) * 2.42 ) /1000)/2.42;
+					calcio, magnesio, HAl) * 2.42 ) /1000)/2.42;
 			
 			
 			
@@ -125,11 +127,11 @@ public enum PotassagemEnum  implements InterfacePotassio{
 		
          @Override
 		 public double CorrecaoKgha(double potassioCTCDesejado, double potassio, double calcio,
-				 double magnesio, double HAl, double porcentagem) {
+				 double magnesio, double HAl) {
 		    	
 		    	
 		    	 return this.QuantidadeAplicada(potassioCTCDesejado, potassio, calcio,
-		    			 magnesio, HAl, porcentagem) *0.17; 
+		    			 magnesio, HAl) *0.17; 
 		    	
 		    	
 		    	
@@ -147,10 +149,10 @@ public enum PotassagemEnum  implements InterfacePotassio{
 		
 		  @Override
 		  public double QuantidadeAplicada(double potassioCTCDesejado, double potassio,
-				   double calcio, double magnesio, double HAl, double porcentagem) {
+				   double calcio, double magnesio, double HAl) {
 			   
 			   
-		  return this.CALCULOPOTASSIO.KgK20(potassioCTCDesejado, potassio, porcentagem,
+		  return this.CALCULOPOTASSIO.KgK20(potassioCTCDesejado, potassio, 
 				  calcio, magnesio,HAl)  * 100 / 22.0;
 			   
 			   
@@ -159,10 +161,10 @@ public enum PotassagemEnum  implements InterfacePotassio{
 
 		   @Override
 		 public double CustoKgha(double sulfato, double potassioCTCDesejado, double potassio, double calcio,
-					 double magnesio, double HAl, double porcentagem) {
+					 double magnesio, double HAl) {
 			    	
 				return sulfato * ((this.QuantidadeAplicada(potassioCTCDesejado, potassio, 
-						calcio, magnesio, HAl, porcentagem ) * 2.42 ) /1000)/2.42;
+						calcio, magnesio, HAl ) * 2.42 ) /1000)/2.42;
 				
 			    	
 			    	
@@ -171,11 +173,11 @@ public enum PotassagemEnum  implements InterfacePotassio{
 		
 	         @Override
 			 public double CorrecaoKgha(double potassioCTCDesejado, double potassio, double calcio,
-					 double magnesio, double HAl, double porcentagem) {
+					 double magnesio, double HAl) {
 			    	
 			    	
 			    	 return this.QuantidadeAplicada(potassioCTCDesejado, potassio, calcio,
-			    			 magnesio, HAl, porcentagem) *0.22; 
+			    			 magnesio, HAl) *0.22; 
 			    	
 			    	
 			    	
@@ -184,11 +186,11 @@ public enum PotassagemEnum  implements InterfacePotassio{
 		
 	      @Override
 			 public double CorrecaoKgha2(double potassioCTCDesejado, double potassio, double calcio,
-					 double magnesio, double HAl, double porcentagem) {
+					 double magnesio, double HAl) {
 			    	
 			    	
 			    	 return this.QuantidadeAplicada(potassioCTCDesejado, potassio, calcio,
-			    			 magnesio, HAl, porcentagem) *0.18; 
+			    			 magnesio, HAl) *0.18; 
 			    	
 			    	
 			    	
@@ -207,10 +209,10 @@ public enum PotassagemEnum  implements InterfacePotassio{
 
 		  @Override
 		  public double QuantidadeAplicada(double potassioCTCDesejado, double potassio,
-				   double calcio, double magnesio, double HAl, double porcentagem) {
+				   double calcio, double magnesio, double HAl) {
 			   
 			   
-		  return this.CALCULOPOTASSIO.KgK20(potassioCTCDesejado, potassio, porcentagem,
+		  return this.CALCULOPOTASSIO.KgK20(potassioCTCDesejado, potassio,
 				  calcio, magnesio,HAl)  * 100 / 44.0;
 			   
 			   

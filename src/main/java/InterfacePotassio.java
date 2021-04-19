@@ -18,7 +18,7 @@ public interface InterfacePotassio {
 				  double magnesio, double HAl);  
 
 	   
-	      public double KgK20(double potassioCTCDesejado, double potassio,  double porcentagem, 
+	      public double KgK20(double potassioCTCDesejado, double potassio, 
 	    		  double calcio, double magnesio, double HAl);
 				  
 	   
@@ -26,22 +26,22 @@ public interface InterfacePotassio {
 		  
 		   
 		public double CustoKgha(double cloreto, double potassioCTCDesejado, double potassio,
-					double calcio, double magnesio, double HAl, double porcentagem);
+					double calcio, double magnesio, double HAl);
 	      
 	   
 	   
 	   
 	   public double CorrecaoKgha(double potassioCTC, double potassio, double calcio,
-	  double magnesio, double HAl, double porcentagem); 
+	  double magnesio, double HAl); 
 	   
 	   
 	   public double CorrecaoKgha2(double potassioCTC, double potassio, double calcio,
-	  double magnesio, double HAl, double porcentagem); 
+	  double magnesio, double HAl); 
 	   
 	   
 	   
 	   public double QuantidadeAplicada(double potassioCTCDesejado, double potassio,
-			   double calcio, double magnesio, double HAl, double porcentagem);
+			   double calcio, double magnesio, double HAl);
 		   
 	   
 	   

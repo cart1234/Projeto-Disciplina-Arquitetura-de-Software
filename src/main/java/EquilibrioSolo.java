@@ -20,6 +20,8 @@ public class EquilibrioSolo {
     
         return calculaSCmol(potassio, calcio, magnesio) + hidrogenioAluminio;
     }
+    
+    
 
     public double calculaPercentual(double Scmol, double CTCcmol) {
         
