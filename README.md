@@ -39,7 +39,9 @@ Language|files|blank|comment|code
 Java|7|358|0|398
 
 Problemas identificados 
+
 ->  Excesso de estrutura de repetição
+
 ->  Nome de metodos incoerente
 
 
