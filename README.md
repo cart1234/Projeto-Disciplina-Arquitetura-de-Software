@@ -45,7 +45,9 @@ Problemas identificados
 ->  Nome de metodos incoerente
 
 
-   ============================================= Após as correcões do projeto ==============================
+   
+   ==================== APÓS CORREÇÃO DO PROJETO ============================
+   
 
 cloc|github.com/AlDanial/cloc v 1.82  T=0.01 s (506.5 files/s, 54631.2 lines/s)
 --- | ---
