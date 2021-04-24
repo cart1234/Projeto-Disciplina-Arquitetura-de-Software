@@ -14,12 +14,13 @@ import static org.junit.jupiter.api.Assertions.*;
 public class TestesProjetoParte2 {
 
 	
+	// ----------------------- SUPERFOSFATO SIMPLES --------------------------
 	
     @Test 
     public void CustoCorrecaoFosforo() {
     	
     	assertEquals(156.178, 
-    			FosfatagemEnum.SUPERFOSFATOSIMPLES.CustoCorrecaoFosforo(1260.00, 8.59, 12));
+    			new SUPERFOSFATOSIMPLES().CustoCorrecaoFosforo(1260.00, 8.59, 12));
     	
     	
     }
@@ -31,27 +32,39 @@ public class TestesProjetoParte2 {
 	
 	assertEquals(123.95079365079366 , 
 		
-			FosfatagemEnum.SUPERFOSFATOSIMPLES.QuantidadeAplicada(12, 8.59));
+			new SUPERFOSFATOSIMPLES().QuantidadeAplicada(12, 8.59));
   
     	
     }
     
     
-    @Test 
+   
+   
     
-    public void CorrecaoKgha() {
+    
+   @Test 
+    
+    public void CorrecaoKghaEnxofre() {
     	assertEquals(12.395079365079367, 
-    			FosfatagemEnum.SUPERFOSFATOSIMPLES.CorrecaoFosforoEnxofre(12, 8.59));
+    			new SUPERFOSFATOSIMPLES().CorrecaoFosforoEnxofre(12, 8.59));
     }
+    
+    
     
     
     
     @Test 
     
-    public void CorrecaoKgha2() {
+    public void CorrecaoKghaCalcio() {
     	assertEquals(34.70622222222223, 
-    			FosfatagemEnum.SUPERFOSFATOSIMPLES.CorrecaoFosforoCalcio(12,  8.59));
+    			new SUPERFOSFATOSIMPLES().CorrecaoFosforoCalcio(12,  8.59));
     }
+    
+    
+    
+    
+    
+    
     
     //----------------------------- SUPERFOSFATOTRIPLO ------------------------------------------
     
@@ -61,7 +74,7 @@ public class TestesProjetoParte2 {
 	
 	assertEquals(54.41742160278746 , 
 		
-			FosfatagemEnum.SUPERFOSFATOTRIPLO.QuantidadeAplicada(12, 8.59));
+			FosfatagemCalcioEnum.SUPERFOSFATOTRIPLO.QuantidadeAplicada(12, 8.59));
   
     	
     }
@@ -72,16 +85,18 @@ public class TestesProjetoParte2 {
     
     @Test 
     
-    public void CorrecaoKghaSUPERFOSFATOTRIPLO() {
+    public void CorrecaoCalcioFosfatoTriplo() {
     	
     	assertEquals(10.883484320557493, 
     			
-    			FosfatagemEnum.SUPERFOSFATOTRIPLO.CorrecaoFosforoCalcio(12, 8.59));
+    			FosfatagemCalcioEnum.SUPERFOSFATOTRIPLO.CorrecaoFosforoCalcio(12, 8.59));
     	
     	
     }
     
     
+    
+    // -------------------------- MAP ------------------------------------------------
     
     
     @Test
@@ -89,7 +104,7 @@ public class TestesProjetoParte2 {
 	
 	assertEquals(46.481547619047625 , 
 		
-			FosfatagemEnum.MAP.QuantidadeAplicada(12,8.59));
+			FosfatagemNitrogenioEnum.MAP.QuantidadeAplicada(12,8.59));
   
     	
     }
@@ -98,11 +113,11 @@ public class TestesProjetoParte2 {
     
  @Test 
     
-    public void CorrecaoKghaMAP() {
+    public void CorrecaoNitrogenioMAP() {
     	
     	assertEquals(4.183339285714286, 
     			
-    			FosfatagemEnum.MAP.CorrecaoFosforoNitrogenio(12, 8.59));
+    			FosfatagemNitrogenioEnum.MAP.CorrecaoNitrogenio(12, 8.59));
     	
     	
     }
@@ -115,7 +130,7 @@ public void QuantidadeAplicadaDAP() {
 	
 	assertEquals(49.58031746031747 , 
 		
-			FosfatagemEnum.DAP.QuantidadeAplicada(12,8.59));
+			FosfatagemNitrogenioEnum.DAP.QuantidadeAplicada(12,8.59));
 
  	
  }
@@ -124,11 +139,11 @@ public void QuantidadeAplicadaDAP() {
     
  @Test 
  
- public void CorrecaoKghaDAP() {
+ public void CorrecaoNitrogenioDAP() {
  	
  	assertEquals(7.932850793650795, 
  			
- 			FosfatagemEnum.DAP.CorrecaoFosforoNitrogenio(12, 8.59));
+ 			FosfatagemNitrogenioEnum.DAP.CorrecaoNitrogenio(12, 8.59));
  	
  	
  }
@@ -140,7 +155,7 @@ public void QuantidadeAplicadaTERMOFOSFATOYORIN() {
 	
 	assertEquals(123.95079365079366 , 
 		
-			FosfatagemEnum.TERMOSFOSFATOYORIN.QuantidadeAplicada(12, 8.59));
+		new TERMOFOSFATOYORIN().QuantidadeAplicada(12, 8.59));
 
  	
  }
@@ -148,11 +163,11 @@ public void QuantidadeAplicadaTERMOFOSFATOYORIN() {
  
  @Test 
  
- public void CorrecaoKghaTERMOFOSFATOYORIN() {
+ public void CorrecaoMAgnesioTERMOFOSFATOYORIN() {
  	
  	assertEquals(18.59261904761905, 
  			
- 			FosfatagemEnum.TERMOSFOSFATOYORIN.CorrecaoFosforoMagnesio(12,  8.59));
+ 			new TERMOFOSFATOYORIN().CorrecaoMagnesio(12,  8.59));
  	
  	
  }
@@ -162,11 +177,11 @@ public void QuantidadeAplicadaTERMOFOSFATOYORIN() {
 
  @Test 
  
- public void CorrecaoKgha2TERMOFOSFATOYORIN() {
+ public void CorrecaoCalcioTERMOFOSFATOYORIN() {
  	
  	assertEquals(34.70622222222223, 
  			
- 			FosfatagemEnum.TERMOSFOSFATOYORIN.CorrecaoFosforoCalcio(12, 8.59));
+ 			new TERMOFOSFATOYORIN().CorrecaoFosforoCalcio(12, 8.59));
  	
  	
  }
@@ -180,7 +195,7 @@ public void QuantidadeAplicadaFOSFATOREADARAT() {
 	
 	assertEquals(67.60952380952381 , 
 		
-			FosfatagemEnum.FOSFATOREATARAD.QuantidadeAplicada(12,8.59)); 
+			FosfatagemCalcioEnum.FOSFATOREATARAD.QuantidadeAplicada(12,8.59)); 
 
  	
  }
@@ -188,11 +203,11 @@ public void QuantidadeAplicadaFOSFATOREADARAT() {
  
  @Test 
  
- public void CorrecaoKgha2FOSFATOREADARAT() {
+ public void CorrecaoCalcioFOSFATOREADARAT() {
  	
  	assertEquals(35.15695238095238, 
  			
- 			FosfatagemEnum.FOSFATOREATARAD.CorrecaoFosforoCalcio(12, 8.59));
+ 			FosfatagemCalcioEnum.FOSFATOREATARAD.CorrecaoFosforoCalcio(12, 8.59));
  	
  	
  }
@@ -211,7 +226,7 @@ public void QuantidadeAplicadaFOSFATOREATIVOGAFSA() {
 	
 	assertEquals(31.811822660098528 , 
 		
-			FosfatagemEnum.FOSFATOREATIVOGAFSA.QuantidadeAplicada(10 ,8.59)); 
+			FosfatagemCalcioEnum.FOSFATOREATIVOGAFSA.QuantidadeAplicada(10 ,8.59)); 
 
  	
  }
@@ -221,11 +236,11 @@ public void QuantidadeAplicadaFOSFATOREATIVOGAFSA() {
  
  @Test 
  
- public void CorrecaoKgha2FOSFATOREATIVOGAFSA() {
+ public void CorrecaoCalcioFOSFATOREATIVOGAFSA() {
  	
  	assertEquals(14.537038961038965, 
  			
- 			FosfatagemEnum.FOSFATOREATIVOGAFSA.CorrecaoFosforoCalcio(10,8.59));
+ 			FosfatagemCalcioEnum.FOSFATOREATIVOGAFSA.CorrecaoFosforoCalcio(10,8.59));
  	
  	
  }
@@ -241,7 +256,7 @@ public void QuantidadeAplicadaFOSFATOREATIVODAOUI() {
 	
 	assertEquals(28.82946428571429 , 
 		
-			FosfatagemEnum.FOSFATOREATIVODAOUI.QuantidadeAplicada(10,  8.59)); 
+			FosfatagemCalcioEnum.FOSFATOREATIVODAOUI.QuantidadeAplicada(10,  8.59)); 
 
  	
  }
@@ -251,11 +266,11 @@ public void QuantidadeAplicadaFOSFATOREATIVODAOUI() {
  
  @Test 
  
- public void CorrecaoKgha2FOSFATOREATIVDAOOUI() {
+ public void CorrecaoCalcioFOSFATOREATIVDAOOUI() {
  	
  	assertEquals(12.97325892857143, 
  			
- 			FosfatagemEnum.FOSFATOREATIVODAOUI.CorrecaoFosforoCalcio(10,8.59));
+ 			FosfatagemCalcioEnum.FOSFATOREATIVODAOUI.CorrecaoFosforoCalcio(10,8.59));
  	
  	
  }
@@ -269,7 +284,7 @@ public void QuantidadeAplicadaFOSFATOPATODEMINAS() {
 	
 	assertEquals(38.439285714285724 , 
 		
-			FosfatagemEnum.FOSFATOPATODEMINAS.QuantidadeAplicada(10,  8.59)); 
+			FosfatagemCalcioEnum.FOSFATOPATODEMINAS.QuantidadeAplicada(10,  8.59)); 
 
  	
  }
@@ -278,11 +293,11 @@ public void QuantidadeAplicadaFOSFATOPATODEMINAS() {
  
  
  @Test
-public void CorrecaoKgha2FOSFATOPATODEMINAS() {
+public void CorrecaoCalcioFOSFATOPATODEMINAS() {
 	
 	assertEquals(10.763000000000003 , 
 		
-			FosfatagemEnum.FOSFATOPATODEMINAS.CorrecaoFosforoCalcio( 10, 8.59)); 
+			FosfatagemCalcioEnum.FOSFATOPATODEMINAS.CorrecaoFosforoCalcio( 10, 8.59)); 
 
  	
  }
@@ -297,7 +312,7 @@ public void QuantidadeAplicadaESCORIADETHOMAS() {
 	
 	assertEquals(49.867181467181474 , 
 		
-			FosfatagemEnum.ESCORIADETHOMAS.QuantidadeAplicada(10,  8.59)); 
+			FosfatagemCalcioEnum.ESCORIADETHOMAS.QuantidadeAplicada(10,  8.59)); 
 
  	
  }
@@ -308,7 +323,7 @@ public void CorrecaoKgha2ESCORIADETHOMAS() {
 	
 	assertEquals(21.941559845559848 , 
 		
-			FosfatagemEnum.ESCORIADETHOMAS.CorrecaoFosforoCalcio(10, 8.59)); 
+			FosfatagemCalcioEnum.ESCORIADETHOMAS.CorrecaoFosforoCalcio(10, 8.59)); 
 
  	
  }
@@ -326,7 +341,7 @@ public void QuantidadeAplicadaACIDOFOSFORICO() {
 	
 	assertEquals(17.741208791208795 , 
 		
-			FosfatagemEnum.ACIDOFOSFORICO.QuantidadeAplicada(10, 8.59)); 
+		new ACIDOFOSFORICO().QuantidadeAplicada(10, 8.59)); 
 
  	
  }
@@ -340,7 +355,7 @@ public void QuantidadeAplicadaMULTIFOSFATOMAGNESIANO() {
 	
 	assertEquals(51.25238095238096 , 
 		
-			FosfatagemEnum.MULTIFOSFATOMAGNESIANO.QuantidadeAplicada(10,  8.59)); 
+			new MULTIFOSFATOMAGNESIANO().QuantidadeAplicada(10,  8.59)); 
 
  	
  }
@@ -352,7 +367,7 @@ public void CorrecaoKghaMULTIFOSFATOMAGNESIANO() {
 	
 	assertEquals(5.637761904761906 , 
 		
-			FosfatagemEnum.MULTIFOSFATOMAGNESIANO.CorrecaoFosforoEnxofre( 10, 8.59)); 
+		new MULTIFOSFATOMAGNESIANO().CorrecaoFosforoEnxofre( 10, 8.59)); 
 
  	
  }
@@ -366,7 +381,7 @@ public void CorrecaoKgha2MULTIFOSFATOMAGNESIANO() {
 	
 	assertEquals(9.225428571428573 , 
 		
-			FosfatagemEnum.MULTIFOSFATOMAGNESIANO.CorrecaoFosforoCalcio( 10, 8.59)); 
+		new MULTIFOSFATOMAGNESIANO().CorrecaoFosforoCalcio( 10, 8.59)); 
 
  	
  }
