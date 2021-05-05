@@ -2,7 +2,8 @@ package CorrecaoParte2.TiposPotassio;
 
 
 public interface InterfacePotassio {
-
+	public double PotassioPercentualIdeal();
+	public double participacaoPotassioCorrecao(double potassioCTCDesejado);
 	
 	 public double PotassioAtualCTC(double potassio, double calcio, double magnesio, double HAl); 
 	 

@@ -5,8 +5,18 @@ public enum PotassagemEnum  implements InterfacePotassio{
 	
 	
 	CALCULOPOTASSIO{ 
-	
-    
+		@Override
+		public double PotassioPercentualIdeal(){
+			return 3.0;
+		}
+		@Override
+		public double participacaoPotassioCorrecao(double potassioCTCDesejado){
+			if (potassioCTCDesejado > 0.001)
+			 	return potassioCTCDesejado;
+			else
+			 	return 0.0;
+			}
+
 		@Override
 		public double PotassioAtualCTC(double potassio, double calcio, double magnesio, double HAl) {
 		  

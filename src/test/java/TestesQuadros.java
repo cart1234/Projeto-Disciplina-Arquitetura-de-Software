@@ -62,7 +62,7 @@ public class TestesQuadros {
 
 	 }
 	 @Test
-	 public void testeCorrecaoFosforo() {
+	public void testeCorrecaoFosforo() {
 		 //Quantidade aplicada para cada fonte de fosforo
 		assertEquals(123.95, new SUPERFOSFATOSIMPLES().QuantidadeAplicada(12, 8.59),1);
                 assertEquals(54.41742160278746 , FosfatagemCalcioEnum.SUPERFOSFATOTRIPLO.QuantidadeAplicada(12, 8.59),1);
