@@ -21,14 +21,11 @@ public class TestesQuadros {
                 assertEquals(58.494957331264544, new EquilibrioSolo().calculaPercentual(
                                 new EquilibrioSolo().calculaSCmol(0.15, 5.76, 1.63),
                                 new EquilibrioSolo().calculaCTCCmol(0.15, 5.76, 1.63, 5.35)),1);//CalculoVPercentual
-                
                 //Teste Nutrientes solo Argiloso
                 assertEquals(new TipoNutrientes(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).getFosforo(),
                         TexturaSolo.ARGILOSO.calculaValorIdeal().getFosforo(),1);
-                        
                 assertEquals(new TipoNutrientes(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).getAluminio(), 
                         TexturaSolo.ARGILOSO.calculaValorIdeal().getAluminio(),1);
-                
                 assertEquals(new TipoNutrientes(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).getAluminioHidrogenio(), 
                         TexturaSolo.ARGILOSO.calculaValorIdeal().getAluminioHidrogenio(),1);
                 assertEquals(new TipoNutrientes(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).getCalcio(), 
@@ -39,7 +36,6 @@ public class TestesQuadros {
                         TexturaSolo.ARGILOSO.calculaValorIdeal().getMagnesio(),1);
                 assertEquals(new TipoNutrientes(9.0, 0.35, 6.0, 1.5, 9.0, 0.0, 0.0).getPotassio(), 
                         TexturaSolo.ARGILOSO.calculaValorIdeal().getPotassio(),1);
-                
                 //Teste Nutrientes textura media
                 assertEquals(new TipoNutrientes(12.0, 0.25, 3.0, 1.0, 6.0, 0.0, 0.0).getFosforo(), 
                         TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().getFosforo(),1);
@@ -55,7 +51,6 @@ public class TestesQuadros {
                         TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().getMagnesio(),1);
                 assertEquals(new TipoNutrientes(12.0, 0.25, 3.0, 1.0, 6.0, 0.0, 0.0).getPotassio(), 
                         TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().getPotassio(),1);
-                
                 // Testes que nao tinham no projeto base, MoPercentual e Carbono
                 assertEquals(3.07, new EquilibrioSolo().MOPercentual(30.7),1);
                 assertEquals(17.84, new EquilibrioSolo().calculaCarbono(new EquilibrioSolo().MOPercentual(30.7)),1);
@@ -63,7 +58,7 @@ public class TestesQuadros {
 	 }
 	 @Test
 	public void testeCorrecaoFosforo() {
-		 //Quantidade aplicada para cada fonte de fosforo
+		//Quantidade aplicada para cada fonte de fosforo
 		assertEquals(123.95, new SUPERFOSFATOSIMPLES().QuantidadeAplicada(12, 8.59),1);
                 assertEquals(54.41742160278746 , FosfatagemCalcioEnum.SUPERFOSFATOTRIPLO.QuantidadeAplicada(12, 8.59),1);
                 assertEquals(46.481547619047625 , FosfatagemNitrogenioEnum.MAP.QuantidadeAplicada(12,8.59),1);
@@ -92,5 +87,28 @@ public class TestesQuadros {
                 assertEquals(5.637761904761906 ,new MULTIFOSFATOMAGNESIANO().CorrecaoFosforoEnxofre( 10, 8.59)); 
                 assertEquals(9.225428571428573 ,new MULTIFOSFATOMAGNESIANO().CorrecaoFosforoCalcio( 10, 8.59));
 
+        }
+        @Test
+        public void testeCorrecaoPotassio() {
+                //Quantidade aplicar
+                assertEquals(450.5462068965517 ,PotassagemEnum.CLORETOPOTASSIO.QuantidadeAplicada(3.0, 0.15, 
+                5.76, 1.63, 5.35));
+                assertEquals(502.5323076923077 , PotassagemEnum.SULFATOPOTASSIO.QuantidadeAplicada(3.0, 0.15, 
+				5.76, 1.63, 5.35));
+                assertEquals(1187.8036363636363 , PotassagemEnum.SULFATOPOTASSIOMAGNESIO.QuantidadeAplicada(3.0, 0.15, 
+                                5.76, 1.63, 5.35));
+                assertEquals(593.9018181818182 , PotassagemEnum.POTASSIO2.QuantidadeAplicada(3.0, 0.15, 
+                                5.76, 1.63, 5.35));
+                assertEquals(593.9018181818182 , PotassagemEnum.POTASSIO2.QuantidadeAplicada(3.0, 0.15, 
+                                5.76, 1.63, 5.35));
+                //Custos por hectare
+                assertEquals(1126.3655172413794 , PotassagemEnum.CLORETOPOTASSIO.CustoKgha(2500.00, 3.0, 0.15, 
+				5.76, 1.63, 5.35));
+                assertEquals(675.4034215384615 ,PotassagemEnum.SULFATOPOTASSIO.CustoKgha(1344.00, 3.0, 0.15, 
+                                5.76, 1.63, 5.35));
+                assertEquals(1465.7496872727272 , PotassagemEnum.SULFATOPOTASSIOMAGNESIO.CustoKgha(1234.00, 3.0, 0.15, 
+                                5.76, 1.63, 5.35));
+                assertEquals(3.0 , PotassagemEnum.CALCULOPOTASSIO.PotassioPercentualIdeal());
+                assertEquals(3.0 , PotassagemEnum.CALCULOPOTASSIO.participacaoPotassioCorrecao(3.0));
         }
 }
