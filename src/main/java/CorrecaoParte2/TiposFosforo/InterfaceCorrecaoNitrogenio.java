@@ -1,3 +1,4 @@
+package CorrecaoParte2.TiposFosforo;
 
 public interface InterfaceCorrecaoNitrogenio {
 

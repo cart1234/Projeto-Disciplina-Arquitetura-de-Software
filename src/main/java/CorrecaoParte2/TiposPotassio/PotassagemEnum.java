@@ -1,3 +1,4 @@
+package CorrecaoParte2.TiposPotassio;
 
 public enum PotassagemEnum  implements InterfacePotassio{
 
@@ -59,6 +60,36 @@ public enum PotassagemEnum  implements InterfacePotassio{
 	   return this.CmolKg(potassioCTCDesejado, potassio, calcio, magnesio, HAl)  * 100/ 85 ;
 			  
   }
+
+
+	@Override
+	public double CustoKgha(double cloreto, double potassioCTCDesejado, double potassio, double calcio, double magnesio,
+			double HAl) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	@Override
+	public double CorrecaoKgha(double potassioCTC, double potassio, double calcio, double magnesio, double HAl) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	@Override
+	public double CorrecaoKgha2(double potassioCTC, double potassio, double calcio, double magnesio, double HAl) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	@Override
+	public double QuantidadeAplicada(double potassioCTCDesejado, double potassio, double calcio, double magnesio,
+			double HAl) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 		
 		
 		
@@ -92,6 +123,55 @@ public enum PotassagemEnum  implements InterfacePotassio{
 			
 			
 			
+		}
+
+
+		@Override
+		public double PotassioAtualCTC(double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+
+		@Override
+		public double KCmol(double potassioCTCDesejado, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+
+		@Override
+		public double CmolMg(double potassioCTCDesejado, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+
+		@Override
+		public double CmolKg(double potassioCTCDesejado, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+
+		@Override
+		public double KgK20(double potassioCTCDesejado, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+
+		@Override
+		public double CorrecaoKgha(double potassioCTC, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+
+		@Override
+		public double CorrecaoKgha2(double potassioCTC, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
 		}
 		
 		
@@ -139,6 +219,66 @@ public enum PotassagemEnum  implements InterfacePotassio{
 		    	
 		    	
 		    }
+
+
+
+
+
+		@Override
+		public double PotassioAtualCTC(double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+
+
+
+
+		@Override
+		public double KCmol(double potassioCTCDesejado, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+
+
+
+
+		@Override
+		public double CmolMg(double potassioCTCDesejado, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+
+
+
+
+		@Override
+		public double CmolKg(double potassioCTCDesejado, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+
+
+
+
+		@Override
+		public double KgK20(double potassioCTCDesejado, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+
+
+
+
+		@Override
+		public double CorrecaoKgha2(double potassioCTC, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
 		
 		
 		
@@ -198,6 +338,41 @@ public enum PotassagemEnum  implements InterfacePotassio{
 			    	
 			    	
 			    }
+
+
+		@Override
+		public double PotassioAtualCTC(double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+
+		@Override
+		public double KCmol(double potassioCTCDesejado, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+
+		@Override
+		public double CmolMg(double potassioCTCDesejado, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+
+		@Override
+		public double CmolKg(double potassioCTCDesejado, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+
+		@Override
+		public double KgK20(double potassioCTCDesejado, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
 			
 		
 		
@@ -220,6 +395,55 @@ public enum PotassagemEnum  implements InterfacePotassio{
 			   
 			   
 		   }
+
+		@Override
+		public double PotassioAtualCTC(double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public double KCmol(double potassioCTCDesejado, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public double CmolMg(double potassioCTCDesejado, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public double CmolKg(double potassioCTCDesejado, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public double KgK20(double potassioCTCDesejado, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public double CustoKgha(double cloreto, double potassioCTCDesejado, double potassio, double calcio,
+				double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public double CorrecaoKgha(double potassioCTC, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public double CorrecaoKgha2(double potassioCTC, double potassio, double calcio, double magnesio, double HAl) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
 		  
 		
 		

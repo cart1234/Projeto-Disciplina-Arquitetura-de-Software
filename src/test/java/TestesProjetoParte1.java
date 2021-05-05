@@ -1,15 +1,12 @@
 
 
 
+import org.junit.jupiter.api.Test;
 
-
-
-import org.junit.Test;
-
-
-
+import CorrecaoParte1.EquilibrioSolo;
+import CorrecaoParte1.TexturaSolo;
+import CorrecaoParte1.TipoNutrientes;
 import static org.junit.jupiter.api.Assertions.*;
-
 
 
 public class TestesProjetoParte1   {
@@ -75,7 +72,6 @@ public class TestesProjetoParte1   {
                 )
         );
     }
-
    
     
 

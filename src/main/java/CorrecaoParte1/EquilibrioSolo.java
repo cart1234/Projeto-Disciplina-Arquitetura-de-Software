@@ -1,3 +1,5 @@
+package CorrecaoParte1;
+
 
 
 
@@ -41,7 +43,7 @@ public class EquilibrioSolo {
 
    public  double calculaCarbono(double mo) {
 
-        double calcula = (mo > 0) ?  mo /10 : 0.0;
+        double calcula = (mo > 0) ?  (mo /0.172) : 0.0;
             return calcula;
 
 

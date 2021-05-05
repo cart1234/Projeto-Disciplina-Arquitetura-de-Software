@@ -1,3 +1,5 @@
+package CorrecaoParte2.TiposPotassio;
+
 
 public interface InterfacePotassio {
 

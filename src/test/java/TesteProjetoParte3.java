@@ -2,11 +2,7 @@
 
 import org.junit.jupiter.api.Test;
 
-
-
-
-
-
+import CorrecaoParte2.TiposPotassio.PotassagemEnum;
 
 import static org.junit.jupiter.api.Assertions.*;
 

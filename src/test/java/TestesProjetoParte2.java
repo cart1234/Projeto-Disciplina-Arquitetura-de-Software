@@ -2,7 +2,19 @@
 
 
 
-import org.junit.Test;
+
+
+import org.junit.jupiter.api.Test;
+
+import CorrecaoParte2.TiposFosforo.ACIDOFOSFORICO;
+import CorrecaoParte2.TiposFosforo.FosfatagemCalcioEnum;
+import CorrecaoParte2.TiposFosforo.FosfatagemNitrogenioEnum;
+import CorrecaoParte2.TiposFosforo.MULTIFOSFATOMAGNESIANO;
+import CorrecaoParte2.TiposFosforo.SUPERFOSFATOSIMPLES;
+import CorrecaoParte2.TiposFosforo.TERMOFOSFATOYORIN;
+import CorrecaoParte2.TiposPotassio.PotassagemEnum;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 
 
@@ -34,7 +46,7 @@ public class TestesProjetoParte2 {
 		
 			new SUPERFOSFATOSIMPLES().QuantidadeAplicada(12, 8.59));
   
-    	
+    	System.out.println(new SUPERFOSFATOSIMPLES().QuantidadeAplicada(12, 8.59));
     }
     
     
@@ -44,7 +56,7 @@ public class TestesProjetoParte2 {
     
    @Test 
     
-    public void CorrecaoKghaEnxofre() {
+    public void CorrecaoKghaEnxofre() {//teste
     	assertEquals(12.395079365079367, 
     			new SUPERFOSFATOSIMPLES().CorrecaoFosforoEnxofre(12, 8.59));
     }
@@ -177,7 +189,7 @@ public void QuantidadeAplicadaTERMOFOSFATOYORIN() {
 
  @Test 
  
- public void CorrecaoCalcioTERMOFOSFATOYORIN() {
+ public void CorrecaoCalcioTERMOFOSFATOYORIN() {//teste
  	
  	assertEquals(34.70622222222223, 
  			
