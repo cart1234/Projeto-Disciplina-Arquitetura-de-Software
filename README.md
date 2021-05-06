@@ -73,7 +73,7 @@ Utilizei como referencia o site https://www.alura.com.br/artigos/reduzindo-de-n-
       Quadro dos Teores do Solo
       <ul>
             <li>Estavam faltando os testes para a Correção de Carbono e para o MO percentual, logo sendo necessário implementar nos Testes do Quadro.</li>
-            <li>O cálculo de correção carbono foi feito de forma incorreta, pois o valor do MO percentual está sendo dividido por 10 sendo que deveria ser divido por 0.172(1.72/10). Assim no teste o valor de correção carbono seria validado no valor correto de 17,84. <strong>Commit:</strong> <a href = "https://github.com/cart1234/Projeto-Disciplina-Arquitetura-de-Software/commit/6b34ab07cb834a66ea2b6887a3825ceee7b1bbe2ee7b1bbe2">6b34ab0</a>
+            <li>O cálculo de correção carbono foi feito de forma incorreta, pois o valor do MO percentual está sendo dividido por 10 sendo que deveria ser divido por 0.172(1.72/10). Assim no teste o valor de correção carbono seria validado no valor correto de 17,84. <strong>Commit:</strong> <a href = "https://github.com/cart1234/Projeto-Disciplina-Arquitetura-de-Software/commit/6b34ab07cb834a66ea2b6887a3825ceee7b1bbe2">6b34ab0</a>
             </li>
       </ul>
   </li>
